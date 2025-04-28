@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>
+            social page
+        </title>
+        <style>
+            body{
+                font-family: [League Spartan], sans-serif;          
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                background-image: url('bg-pattern-top-desktop.svg');
+                background-repeat: no-repeat;
+
+            }
+
+            .row{
+                display: flex;
+                flex-direction: row;
+                margin: 60px;
+            }
+
+            h1{
+                font-size: 3.5rem;
+                font-weight: 700;
+                font-weight: bold;
+                color: hsl(300, 43%, 22%);
+            }
+
+            .description{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: hsl(303, 10%, 53%);
+            }
+
+            .col{
+                display: flex;
+                flex-direction: column;
+                margin-left:80px;
+                margin-right: 30px;
+            }
+
+            .review{
+                border-radius: 3%;
+                margin-top: 40px;
+                position: relative;
+                display: flex;
+                justify-content: space-around; /* Spaces cards evenly */
+                gap: 30px;
+            }
+
+            .review1, .review2, .review3{
+                display: flex;
+                flex-direction: row;
+                margin: 10px;
+                background-color: hsl(300, 24%, 96%);
+                width: auto;
+                height: auto;
+            }
+
+            .review1{
+                position: relative;
+                transform: translateY(-50px);
+            }
+
+            .review2{
+                position: relative;
+                transform: translateY(0px); 
+            }
+
+            .review3{
+                position: relative;
+                transform: translateY(50px); 
+            }
+
+            .stars{
+                display: flex;
+                flex-direction: row;
+                color:sandybrown;
+            }
+
+            .review-text{
+                display: flex;
+                flex-direction: row;
+                color: hsl(300, 43%, 22%);
+                font-weight: bold;
+            }
+
+            .container2{
+                display: flex;
+                flex-direction: column;
+                background-image: url('bg-pattern-bottom-desktop.svg');
+                background-repeat: no-repeat;
+                margin: 100px;
+            }
+
+            .row2{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .col2{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card{
+                position: relative;
+                display: flex;
+                justify-content: space-around; /* Spaces cards evenly */
+                gap: 20px;
+            }
+
+            .card1, .card2, .card3{
+                margin: 20px;
+                background-color: hsl(300, 43%, 22%);
+                font-weight:bold;
+                border-radius: 3%;
+                width: 100%;
+                height:auto;
+            }
+
+            .card1{
+                position: relative;
+                transform: translateY(-50px);
+            }
+
+            .card2{
+                position: relative;
+                transform: translateY(0px); 
+            }
+
+            .card3{
+                position: relative;
+                transform: translateY(50px); 
+            }
+
+            img{
+                border-radius: 50%;
+                width: 20%;
+                height: 20%;
+            }
+
+            .img-content1{
+                display: flex;
+                flex-direction: row;
+                color:white;
+            }
+
+            .img-content2{
+                display: flex;
+                flex-direction: row;
+                color: hsl(300, 24%, 96%);
+            }
+
+            .review-text2{
+                display: flex;
+                flex-direction: row;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>10,000+ of our <br> users love our <br> products.</h1>
+                    <p class="description">We only provide great products combined with excellent <br> customer service.See what our satisfied customers are <br> saying about our services.</p>
+                </div>
+
+                <div class="col">
+                    <div class="review">
+
+                        <div class="review1">
+                            <div class="stars">
+                                &#9733&#9733&#9733&#9733&#9733
+                            </div>
+                                <p class="review-text">
+                                    Rated 5 stars in Reviews
+                                </p>
+                        </div>
+                
+                        <div class="review2">
+                            <div class="stars">
+                                &#9733&#9733&#9733&#9733&#9733
+                            </div>
+                                <p class="review-text">
+                                    Rated 5 stars in Report Guru
+                                </p>
+                        </div>
+
+                        <div class="review3">
+                            <div class="stars">
+                                &#9733&#9733&#9733&#9733&#9733
+                            </div>
+                                <p class="review-text">
+                                    Rated 5 stars in BestTech
+                                </p>        
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container2">
+                <div class="row2">
+                    <div class="col2">
+
+                        <div class="card">
+
+                        <div class="card1">
+                            <div class="row">
+                                <img src="image-colton.jpg" alt="colton">
+                                <div class="col">
+                                <p class="img-content1">Colton Smith</p>
+                                <div class="row">
+                                <p class="img-content2">Verified Buyer</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
+                                    <br>but we also received it in time. Excellent!"</p>
+                            </div>
+                       </div>
+
+                       <div class="card2">
+                        <div class="row">
+                            <img src="image-colton.jpg" alt="colton">
+                            <div class="col">
+                            <p class="img-content1">Colton Smith</p>
+                            <div class="row">
+                            <p class="img-content2">Verified Buyer</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
+                                <br>but we also received it in time. Excellent!"</p>
+                        </div>
+                   </div>
+                   
+                   <div class="card3">
+                    <div class="row">
+                        <img src="image-colton.jpg" alt="colton">
+                        <div class="col">
+                        <p class="img-content1">Colton Smith</p>
+                        <div class="row">
+                        <p class="img-content2">Verified Buyer</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
+                            <br>but we also received it in time. Excellent!"</p>
+                    </div>
+               </div>
+
+               </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </body>
+</html>
