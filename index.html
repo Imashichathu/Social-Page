@@ -5,7 +5,7 @@
         </title>
         <style>
             body{
-                font-family: [League Spartan], sans-serif;          
+                font-family: 'League Spartan', sans-serif;         
             }
 
             .container{
@@ -47,8 +47,9 @@
                 margin-top: 40px;
                 position: relative;
                 display: flex;
+                width: 100%;
                 justify-content: space-around; /* Spaces cards evenly */
-                gap: 30px;
+                gap: 20px;
             }
 
             .review1, .review2, .review3{
@@ -58,20 +59,19 @@
                 background-color: hsl(300, 24%, 96%);
                 width: auto;
                 height: auto;
+                align-items: center;
+                padding: 10px;
             }
 
             .review1{
-                position: relative;
                 transform: translateY(-50px);
             }
 
             .review2{
-                position: relative;
                 transform: translateY(0px); 
             }
 
             .review3{
-                position: relative;
                 transform: translateY(50px); 
             }
 
@@ -93,73 +93,191 @@
                 flex-direction: column;
                 background-image: url('bg-pattern-bottom-desktop.svg');
                 background-repeat: no-repeat;
-                margin: 100px;
-            }
-
-            .row2{
-                display: flex;
-                flex-direction: row;
-            }
-
-            .col2{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .card{
-                position: relative;
-                display: flex;
-                justify-content: space-around; /* Spaces cards evenly */
-                gap: 20px;
-            }
-
-            .card1, .card2, .card3{
-                margin: 20px;
-                background-color: hsl(300, 43%, 22%);
-                font-weight:bold;
-                border-radius: 3%;
+                background-position: center;
+                background-size: cover;
                 width: 100%;
-                height:auto;
+                align-items: center;
+                padding-bottom: 30px;
             }
 
-            .card1{
+            .card {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card1, .card2, .card3 {
+            background-color: hsl(300, 43%, 22%);
+            border-radius: 10px;
+            width: 400px;
+            height: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            align-content: center;
+            margin:20px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 20px 10px 20px;
+        }
+
+        .card-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .verified {
+            color: hsl(300, 94%, 49%);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .card-body {
+            padding: 0 20px 20px 20px;
+        }
+        .card1{
                 position: relative;
                 transform: translateY(-50px);
             }
 
-            .card2{
+        .card2{
                 position: relative;
                 transform: translateY(0px); 
             }
 
-            .card3{
+        .card3{
                 position: relative;
                 transform: translateY(50px); 
             }
 
-            img{
-                border-radius: 50%;
-                width: 20%;
-                height: 20%;
-            }
+        .review-text2 {
+            color: white;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
 
-            .img-content1{
-                display: flex;
-                flex-direction: row;
-                color:white;
-            }
+         /* Tablet Responsive */
+    @media screen and (max-width: 1024px) {
+        .row {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-            .img-content2{
-                display: flex;
-                flex-direction: row;
-                color: hsl(300, 24%, 96%);
-            }
+        .col {
+            margin: 20px 0;
+        }
 
-            .review-text2{
-                display: flex;
-                flex-direction: row;
-                color: white;
-            }
+        .card {
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card1, .card2, .card3 {
+            width: 90%;
+            transform: none;
+        }
+    }
+
+    /* Mobile Responsive (screen width less than 768px) */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 10px;
+    }
+
+    .col {
+        margin: 20px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .review {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .review1, .review2, .review3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        transform: none;
+    }
+
+    .stars {
+        margin-bottom: 5px;
+    }
+
+    .review-text {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%;
+        margin: 10px 0;
+        transform: none;
+    }
+
+    .card-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-body p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
 
         </style>
     </head>
@@ -176,7 +294,7 @@
 
                         <div class="review1">
                             <div class="stars">
-                                &#9733&#9733&#9733&#9733&#9733
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
                             </div>
                                 <p class="review-text">
                                     Rated 5 stars in Reviews
@@ -185,7 +303,7 @@
                 
                         <div class="review2">
                             <div class="stars">
-                                &#9733&#9733&#9733&#9733&#9733
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
                             </div>
                                 <p class="review-text">
                                     Rated 5 stars in Report Guru
@@ -194,7 +312,7 @@
 
                         <div class="review3">
                             <div class="stars">
-                                &#9733&#9733&#9733&#9733&#9733
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
                             </div>
                                 <p class="review-text">
                                     Rated 5 stars in BestTech
@@ -207,59 +325,49 @@
             </div>
 
             <div class="container2">
-                <div class="row2">
-                    <div class="col2">
-
-                        <div class="card">
-
-                        <div class="card1">
-                            <div class="row">
-                                <img src="image-colton.jpg" alt="colton">
-                                <div class="col">
-                                <p class="img-content1">Colton Smith</p>
-                                <div class="row">
-                                <p class="img-content2">Verified Buyer</p>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
-                                    <br>but we also received it in time. Excellent!"</p>
-                            </div>
-                       </div>
-
-                       <div class="card2">
-                        <div class="row">
-                            <img src="image-colton.jpg" alt="colton">
-                            <div class="col">
-                            <p class="img-content1">Colton Smith</p>
-                            <div class="row">
-                            <p class="img-content2">Verified Buyer</p>
-                            </div>
+                <div class="card">
+                    <!-- Card 1 -->
+                    <div class="card1">
+                        <div class="card-header">
+                            <img src="image-colton.jpg" alt="Colton Smith">
+                            <div class="card-info">
+                                <p class="name">Colton Smith</p>
+                                <p class="verified">Verified Buyer</p>
                             </div>
                         </div>
-                        <div class="col">
-                            <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
-                                <br>but we also received it in time. Excellent!"</p>
-                        </div>
-                   </div>
-                   
-                   <div class="card3">
-                    <div class="row">
-                        <img src="image-colton.jpg" alt="colton">
-                        <div class="col">
-                        <p class="img-content1">Colton Smith</p>
-                        <div class="row">
-                        <p class="img-content2">Verified Buyer</p>
-                        </div>
+                        <div class="card-body">
+                            <p class="review-text2">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <p class="review-text2">"We needed the same printed design as<br> the one we had ordered a week prior. Not<br> only did they find the original order, 
-                            <br>but we also received it in time. Excellent!"</p>
+            
+                    <!-- Card 2 -->
+                    <div class="card2">
+                        <div class="card-header">
+                            <img src="image-irene.jpg" alt="Irene Roberts">
+                            <div class="card-info">
+                                <p class="name">Irene Roberts</p>
+                                <p class="verified">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="review-text2">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+                        </div>
                     </div>
-               </div>
-
+            
+                    <!-- Card 3 -->
+                    <div class="card3">
+                        <div class="card-header">
+                            <img src="image-anne.jpg" alt="Anne Wallace">
+                            <div class="card-info">
+                                <p class="name">Anne Wallace</p>
+                                <p class="verified">Verified Buyer</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="review-text2">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
+                        </div>
+                    </div>
+                </div>
                </div>
 
                     </div>
